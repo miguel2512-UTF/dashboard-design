@@ -1,0 +1,23 @@
+.footer-separator{
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 0.5rem;
+    margin: auto;
+    height: 1px;
+    width: 100%;
+}
+
+.footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.footer-content{
+    margin: 20px 0px;
+}
