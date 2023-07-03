@@ -45,6 +45,13 @@ html, body{
         z-index: 1;
         transition: margin 0.5s ease;
     }
+
+    .grid-layout-1 {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: .5rem;
+        height: 95vh;
+    }
 }
 
 @media screen and (min-width: 1000px) {
@@ -57,7 +64,7 @@ html, body{
     }
         
     .content-body{
-        padding: 2.1875rem 2.5rem;
+        padding: 2.188rem 2.5rem;
         padding-bottom: 0px;
         overflow-y: auto;
         background-color: var(--secondary-color);
@@ -68,6 +75,18 @@ html, body{
     .content-wrapper{
         margin-left: -15rem;
     }   
+
+    .grid-layout-1 {
+        display: grid;
+        grid-template-columns: 60% auto;
+        grid-template-rows: 60% auto;
+        grid-gap: 1rem;
+        height: 90vh;
+    }
+    
+    .grid-layout-1 .container:nth-child(1) {
+        grid-row: 1/-1;
+    }
 }
 
 .page-body{
@@ -77,7 +96,7 @@ html, body{
 }
 
 .page-content{
-    padding-bottom: 95px;
+    padding-bottom: 5.938rem;
 }
 
 .container{

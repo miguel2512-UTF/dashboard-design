@@ -1,7 +1,7 @@
 @media screen and (min-width: 200px) and (max-width: 1000px) {
-    .sidebar{
+    .sidebar {
         position: fixed;
-        width: 60%;
+        width: 250px;
         height: 100%;
         z-index: 99;
         background-color: var(--primary-color);
@@ -10,35 +10,35 @@
         transition: transform 0.5s ease;
     }
 
-    .sidebar.sidebar-wrapper{
+    .sidebar.sidebar-wrapper {
         transform: translateX(0%);
         transition: transform 0.5s ease;
     }
 
-    .logo-content{
+    .logo-content {
         position: relative;
         display: flex;
         align-items: center;
         padding: 15px;
         width: 100%;
         height: 10%;
-    
-        .logo-title{
+
+        .logo-title {
             font-size: 1.5rem;
             margin: 0px 10px;
         }
-    
-        .logo{
-            width: 15%;
+
+        .logo {
+            width: 1.875rem;
         }
 
-        .btn-close-sidebar{
+        .btn-close-sidebar {
             position: absolute;
             right: 0.938rem;
         }
     }
 
-    .sidebar-content{
+    .sidebar-content {
         display: flex;
         flex-direction: column;
         margin: 1rem 0px;
@@ -46,14 +46,24 @@
 }
 
 @media screen and (min-width: 1000px) {
-    .sidebar{
+    .sidebar {
         overflow: auto;
         grid-row: 1 / -1;
         /* box-shadow: 1px 0px 10px rgba(0, 0, 0, 0.2); */
         background-color: var(--primary-color);
     }
 
-    .sidebar.sidebar-wrapper .sidebar-item span{
+    .sidebar.sidebar-wrapper .sidebar-item {
+        display: flex;
+        align-items: center;
+    }
+
+    .sidebar.sidebar-wrapper .sidebar-item.expand-item div{
+        display: flex;
+        align-items: center;
+    }
+
+    .sidebar.sidebar-wrapper .sidebar-item span {
         position: absolute;
         left: 2.5rem;
         opacity: 0;
@@ -61,63 +71,93 @@
         border-radius: .250rem;
         background-color: var(--primary-color);
     }
-    
-    .sidebar.sidebar-wrapper .sidebar-item:hover span{
+
+    .sidebar.sidebar-wrapper .sidebar-item:hover span {
         z-index: 99;
         opacity: 1;
         transition: opacity .5s ease-in-out;
     }
 
-    .logo-content{
+    .logo-content {
         display: flex;
         align-items: center;
         height: 10%;
         padding: 0.938rem;
-    
-        .logo-title{
+
+        .logo-title {
             font-size: 1.5rem;
             margin: 0px 15px;
         }
-    
-        .logo{
+
+        .logo {
             width: 1.875rem;
         }
 
-        .btn-close-sidebar{
+        .btn-close-sidebar {
             display: none;
         }
     }
 
-    .sidebar-content{
+    .sidebar-content {
         display: flex;
         flex-direction: column;
         margin: 1.875rem 0px;
     }
 }
 
-.sidebar-item{
+.sidebar-item {
     position: relative;
-    display: flex;
-    align-items: center;
+    width: 100%;
     padding: 0.625rem 1.25rem;
     transition: background .3s ease;
 }
 
-.sidebar-item:hover{
+.sidebar-item:hover {
     cursor: pointer;
     background-color: var(--secondary-color);
     transition: background .3s ease;
 }
 
-.sidebar-item .arrow-icon{
+.sidebar-item .arrow-icon {
     position: absolute;
     right: 20px;
+    transition: transform .3s ease;
 }
 
-.sidebar-item i{
+.sidebar-item i {
     font-size: 20px;
 }
 
-.sidebar-item span{
+.sidebar-item span {
     margin-left: 20px;
+}
+
+.sidebar-item-options {
+    visibility: hidden;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+    margin: .5rem 0;
+    margin-left: 2.75rem;
+    margin-top: -3.125rem;
+    transition: visibility .5s ease, opacity .25s ease, margin .5s ease;
+
+    .option-item {
+        color: black;
+        margin: .1rem 0;
+        width: 80%;
+        text-decoration: none;
+    }
+}
+
+.sidebar-item.show .sidebar-item-options {
+    visibility: visible;
+    margin-top: .5rem;
+    opacity: 1;
+    transition: visibility .5s ease, opacity .25s ease, margin .5s ease;
+}
+
+.sidebar-item.show .arrow-icon {
+    transform: rotate(90deg);
 }
