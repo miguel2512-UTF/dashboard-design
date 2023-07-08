@@ -10,3 +10,11 @@
 .cursor__pointer{
     cursor: pointer;
 }
+
+.margin__1{
+    margin: 1rem 0;
+}
+
+.margin__top__1{
+    margin-top: 1rem;
+}
