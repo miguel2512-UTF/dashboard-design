@@ -1,6 +1,6 @@
 .footer-separator{
     background-color: rgba(0, 0, 0, 0.2);
-    border-radius: 0.5rem;
+    border-radius: var(--radius-primary);
     margin: auto;
     height: 1px;
     width: 100%;

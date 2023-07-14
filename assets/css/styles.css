@@ -21,8 +21,11 @@ body {
 :root {
     --primary-color: white;
     --secondary-color: #F1F1F1;
-    --secondary-color-rgb: 241, 241, 241
     --btn-primary-color: #1F1F1F;
+    --radius-primary: .5rem;
+    --radius-secondary: .25rem;
+    --shadow-color: 0, 0, 0;
+    --border-color: rgba(73, 80, 87, .3);
 }
 
 @media screen and (min-width: 200px) and (max-width: 600px) {
@@ -105,7 +108,7 @@ body {
 .container {
     background-color: var(--primary-color);
     padding: 1rem 1.5rem;
-    border-radius: .5rem;
+    border-radius: var(--radius-primary);
     text-align: justify;
 }
 
@@ -146,7 +149,7 @@ body {
 }
 
 .table-template-2 tr {
-    border-radius: .5rem;
+    border-radius: var(--radius-primary);
     background-color: var(--primary-color);
 }
 
