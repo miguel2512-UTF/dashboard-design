@@ -27,6 +27,7 @@
 .form__input {
     appearance: none;
     padding: .375rem .75rem;
+    font-family: system-ui;
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
@@ -52,4 +53,17 @@ h3 {
     font-weight: bold;
     text-transform: capitalize;
     margin: .25rem 0;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.mr-1 {
+    margin-right: .5rem;
 }
