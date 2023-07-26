@@ -15,12 +15,20 @@
 .btn-primary {
     --btn-border-color: var(--btn-primary-color);
     color: white;
-    background-color: var(--btn-primary-color) !important;
+    background-color: var(--btn-primary-color);
+}
+
+.btn-primary:focus {
+    background-color: #434343;
 }
 
 .btn-secondary {
     --btn-border-color: white;
     background-color: white;
+}
+
+.btn-secondary:focus {
+    background-color: #EFEFEF;
 }
 
 .cursor__pointer{
