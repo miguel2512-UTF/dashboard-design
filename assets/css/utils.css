@@ -1,4 +1,8 @@
 .btn{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-family: system-ui;
     background-color: var(--secondary-color);
     cursor: pointer;
     padding: .5rem .75rem;
@@ -28,6 +32,7 @@
 }
 
 .btn-secondary:focus {
+    --btn-border-color: #EFEFEF;
     background-color: #EFEFEF;
 }
 

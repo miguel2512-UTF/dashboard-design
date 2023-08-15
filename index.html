@@ -55,7 +55,7 @@
         </nav>
 
         <section class="content-body">
-            <sec class="page-body">
+            <section class="page-body">
                 <div class="page-content">
                     <div class="grid-layout-1">
                         <div class="container">
@@ -130,6 +130,9 @@
                     <h3>Buttons</h3>
                     <button class="btn btn-primary">Primary</button>
                     <button class="btn btn-secondary">Secondary</button>
+
+                    <h3>Modal</h3>
+                    <button class="btn btn-primary" id="modal-demo">Launch Demo</button>
                 </div>
                 <footer class="footer">
                     <div class="footer-separator"></div>
@@ -137,11 +140,30 @@
                         <span>miguel2512-UTF</span>
                     </div>
                 </footer>
-            </sec>
+            </section>
         </section>
+        
+        <div class="modal-backdrop">
+            <div class="modal">
+                <div class="modal-header">
+                    <h3>Modal</h3>
+                    <i class="bi bi-x" id="modal-close"></i>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, repellat?
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" id="modal-close">Close</button>
+                    <button class="btn btn-primary">Save</button>
+                </div>
+            </div>
+        </div>
     </main>
 
     <!-- Scripts -->
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/modal.js"></script>
 </body>
 </html>

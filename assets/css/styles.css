@@ -2,6 +2,7 @@
 @import "./header.css";
 @import "./sidebar.css";
 @import "./footer.css";
+@import "./modal.css";
 @import "./utils.css";
 
 * {
