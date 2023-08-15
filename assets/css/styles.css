@@ -45,7 +45,7 @@ body {
     }
 
     .content-body {
-        padding: 2.1875rem 2.5rem;
+        padding: 1rem 2.5rem;
         padding-bottom: 0px;
         overflow-y: auto;
         background-color: var(--secondary-color);
@@ -71,7 +71,7 @@ body {
     }
 
     .content-body {
-        padding: 2.188rem 2.5rem;
+        padding: 1rem 2.5rem;
         padding-bottom: 0px;
         overflow-y: auto;
         background-color: var(--secondary-color);
