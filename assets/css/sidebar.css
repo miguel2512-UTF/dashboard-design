@@ -136,15 +136,14 @@
 }
 
 .sidebar-item-options {
+    position: absolute;
     visibility: hidden;
     opacity: 0;
     display: flex;
     flex-direction: column;
-    font-size: 15px;
-    margin: .5rem 0;
     margin-left: 2.75rem;
     margin-top: -3.125rem;
-    transition: visibility .5s ease, opacity .25s ease, margin .5s ease;
+    transition: margin .5s ease;
 
     .option-item {
         color: black;
@@ -155,10 +154,13 @@
 }
 
 .sidebar-item.show .sidebar-item-options {
+    position: relative;
     visibility: visible;
-    margin-top: .5rem;
     opacity: 1;
-    transition: visibility .5s ease, opacity .25s ease, margin .5s ease;
+    font-size: 15px;
+    margin: .5rem 0;
+    margin-left: 2.75rem;
+    margin-top: .5rem;
 }
 
 .sidebar-item.show .arrow-icon {

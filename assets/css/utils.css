@@ -23,6 +23,7 @@
 }
 
 .btn-primary:focus {
+    --btn-border-color: #434343;
     background-color: #434343;
 }
 
