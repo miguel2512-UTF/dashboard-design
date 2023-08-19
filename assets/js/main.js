@@ -22,3 +22,9 @@ btn_expand.forEach(element => {
         }
     })
 })
+
+if (navigator.userAgentData.mobile) {
+    document.querySelectorAll(".input__date").forEach(el => {
+        el.classList.add("form__date")
+    })
+}

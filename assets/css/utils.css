@@ -1,4 +1,4 @@
-.btn{
+.btn {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -37,15 +37,15 @@
     background-color: #EFEFEF;
 }
 
-.cursor__pointer{
+.cursor__pointer {
     cursor: pointer;
 }
 
-.margin__1{
+.margin__1 {
     margin: 1rem 0;
 }
 
-.margin__top__1{
+.margin__top__1 {
     margin-top: 1rem;
 }
 
@@ -71,6 +71,18 @@
 
 .form__input:focus {
     box-shadow: 0 0 0 .1rem rgba(0, 158, 255, .5);
+}
+
+.form__select {
+    background-image: url(../icons/bx-chevron-down.svg);
+    background-repeat: no-repeat;
+    background-position: right .75rem center;
+}
+
+.form__date {
+    background-image: url(../icons/calendar.svg);
+    background-repeat: no-repeat;
+    background-position: right .75rem center;
 }
 
 h3 {
