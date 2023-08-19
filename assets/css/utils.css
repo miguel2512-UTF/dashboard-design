@@ -80,9 +80,10 @@
 }
 
 .form__date {
-    background-image: url(../icons/calendar.svg);
+    background-image: url(../icons/bx-calendar-alt.svg);
     background-repeat: no-repeat;
     background-position: right .75rem center;
+    background-size: 1rem;
 }
 
 h3 {
