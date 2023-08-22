@@ -17,9 +17,7 @@ btn_close_sidebar.addEventListener("click", (e) => {
 
 btn_expand.forEach(element => {
     element.addEventListener("click", () => {
-        if (!document.querySelector(".sidebar").classList.contains("sidebar-wrapper")) {
-            element.parentElement.parentElement.classList.toggle("show")
-        }
+        element.parentElement.parentElement.classList.toggle("show")
     })
 })
 
