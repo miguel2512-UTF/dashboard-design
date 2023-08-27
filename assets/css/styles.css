@@ -19,6 +19,10 @@ body {
     height: 100%;
 }
 
+a {
+    -webkit-tap-highlight-color: transparent;
+}
+
 :root {
     --primary-color: white;
     --secondary-color: #F1F1F1;
