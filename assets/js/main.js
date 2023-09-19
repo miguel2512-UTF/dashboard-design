@@ -24,7 +24,7 @@ btn_expand.forEach(element => {
 if (navigator.userAgentData.mobile) {
     document.querySelectorAll(".input__date").forEach(el => {
         el.classList.add("form__date")
-        const [ day, month, year ] = new Date().toLocaleDateString("en-GB").split('/')
+        const [day, month, year] = new Date().toLocaleDateString("en-GB").split('/')
         const currentDate = [year, month, day].join("-")
         el.value = currentDate
     })

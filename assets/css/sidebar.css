@@ -62,7 +62,7 @@
         align-items: center;
     }
 
-    .sidebar.sidebar-wrapper .sidebar-item.expand-item div{
+    .sidebar.sidebar-wrapper .sidebar-item.expand-item div {
         display: flex;
         align-items: center;
     }
@@ -136,31 +136,14 @@
 }
 
 .sidebar-item-options {
-    position: absolute;
-    visibility: hidden;
-    opacity: 0;
-    display: flex;
+    display: none;
     flex-direction: column;
+    margin: .5rem 0;
     margin-left: 2.75rem;
-    margin-top: -3.125rem;
-    transition: margin .5s ease;
-
-    .option-item {
-        color: black;
-        margin: .1rem 0;
-        width: 0;
-        text-decoration: none;
-    }
 }
 
 .sidebar-item.show .sidebar-item-options {
-    position: relative;
-    visibility: visible;
-    opacity: 1;
-    font-size: 15px;
-    margin: .5rem 0;
-    margin-left: 2.75rem;
-    margin-top: .5rem;
+    display: flex;
 }
 
 .sidebar-item.show .arrow-icon {
